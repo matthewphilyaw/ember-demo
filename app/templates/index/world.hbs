@@ -1,0 +1,35 @@
+<div class="row world">
+  <div {{bind-attr class="show.sidebar:col-lg-8:col-lg-12"}}>
+    <div class="panel panel-primary">   
+      <div class="panel-heading">
+        Map
+        <div class="btn-toolbar pull-right">
+          <div class="btn-group">
+            {{#link-to 'index.world.new.room' class="btn btn-xs btn-warning"}}
+              <span class="glyphicon glyphicon-plus"></span>
+              Room 
+            {{/link-to}}
+            <div class="btn btn-xs btn-warning" {{action 'edit'}}>
+              Edit 
+            </div>
+          </div>
+          <div class="btn-group">
+            <div class="btn btn-xs btn-warning">
+              info
+            </div>
+            <div class="btn btn-xs btn-warning">
+              settings
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="panel-body">
+        world viewer goes here
+      </div>
+    </div>
+  </div>
+  {{#if show.sidebar}}
+    {{outlet}}
+  {{/if}}
+</div>
