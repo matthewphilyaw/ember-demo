@@ -6,7 +6,7 @@ Router.map(function() {
             this.resource('index.world.new', { path: 'new' }, function() {
                 this.route('room');
             });
-            this.resource('index.world.room', { path: 'room/:room_id' }, 
+            this.resource('index.world.room', { path: 'room' }, 
                           function() {
                 this.route('edit' );
             });
