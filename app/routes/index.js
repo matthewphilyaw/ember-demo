@@ -1,5 +1,5 @@
-import Listener from 'appkit/lib/routes/nav/listener';
+import Ping from 'appkit/lib/routes/nav/ping';
 
-export default Listener.extend({
+export default Ping.extend({
 
 });
