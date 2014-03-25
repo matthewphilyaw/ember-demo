@@ -9,6 +9,7 @@
         {{!-- {{debug}} is also nice, in that it will break in the debugger --}}
         {{log name}}
         <li {{bind-attr class="active:active"}}>
+          {{log route}}
           {{#link-to route}}{{name}}{{/link-to}}
         </li>
         {{/each}}

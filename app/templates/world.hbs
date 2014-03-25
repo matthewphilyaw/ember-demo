@@ -5,11 +5,14 @@
         Map
         <div class="btn-toolbar pull-right">
           <div class="btn-group">
-            {{#link-to 'index.world.new.room' class="btn btn-xs btn-warning"}}
+            {{#link-to 'room.new' class="btn btn-xs btn-warning"}}
               <span class="glyphicon glyphicon-plus"></span>
               Room 
             {{/link-to}}
-            <div class="btn btn-xs btn-warning" {{action 'edit'}}>
+            <!-- Simulating the edit event using this button
+                 but in reality it would probably be bubbled up from the 
+                 viewer when the user clicks a room or double clicks a room -->
+            <div class="btn btn-xs btn-warning" {{action 'edit' 3}}>
               Edit 
             </div>
           </div>
